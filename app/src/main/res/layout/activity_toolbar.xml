@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height= "56dp"
+    android:background="@color/purple_700">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#FF03A9F4"
+            android:gravity="center_vertical"
+            android:textStyle="normal"
+            android:onClick="openSettings"
+            android:textSize="18sp"
+            android:text="Settings"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Checkout"
+            android:fontFamily="@font/dosis_extrabold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+
+        <LinearLayout
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/cancel_payment"
+            android:gravity="center_horizontal"
+            android:onClick="getCustomerSavedCardsList"
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/cards1"
+                android:visibility="gone"
+
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

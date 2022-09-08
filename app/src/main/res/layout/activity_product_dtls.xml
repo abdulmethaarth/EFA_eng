@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_bg"
+    tools:context=".activity.ProductDtlsActivity">
+
+    <ImageView
+        android:id="@+id/product_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/prdct_dtls_img"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/green_side_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingRight="15dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_shape"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/product_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Black top"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="$ 42"
+                android:fontFamily="@font/dosis_extrabold"
+                android:textColor="@color/purple_700" />
+
+            <TextView
+                android:id="@+id/offerline"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Apply coupon"
+                android:textSize="@dimen/font_size_14sp"
+                android:fontFamily="@font/dosis_semibold"
+                android:textColor="@color/black"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Select Size"
+            android:textStyle="bold"
+            android:fontFamily="@font/dosis_extrabold"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/s"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:text="S"
+                android:fontFamily="@font/dosis_semibold"
+                android:textColor="@color/white"
+                android:background="@drawable/size_btn_box"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/m"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:text="M"
+                android:fontFamily="@font/dosis_semibold"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/purple_700"
+                android:background="@drawable/size_btn_box_border"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/l"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:text="L"
+                android:fontFamily="@font/dosis_semibold"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/purple_700"
+                android:background="@drawable/size_btn_box_border"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/xl"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:text="XL"
+                android:fontFamily="@font/dosis_semibold"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/purple_700"
+                android:background="@drawable/size_btn_box_border"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_basic_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:fontFamily="@font/dosis_extrabold"
+            android:textColor="@color/black"
+            android:text="Select Color" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/margin_basic_10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/colors_img"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:text="4.5"
+                android:drawableLeft="@drawable/ic_baseline_star_24"
+                android:textColor="@color/white"
+                android:fontFamily="@font/dosis_extrabold"
+                android:background="@drawable/border_box"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="very Good"
+                android:fontFamily="@font/dosis_semibold"
+                android:layout_marginLeft="10dp"
+                android:textColor="#575656"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/font_size_15sp"
+                android:layout_height="match_parent"
+                android:text="36 Reviews"
+                android:textColor="@color/purple_700"
+                android:textSize="12dp"
+                android:fontFamily="@font/dosis_semibold"
+                android:gravity="right|center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/font_size_15sp"
+                android:layout_height="match_parent"
+                android:text="User Guide"
+                android:fontFamily="@font/dosis_semibold"
+                android:textColor="@color/purple_700"
+                android:textSize="12dp"
+                android:gravity="right|center"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Description"
+            android:fontFamily="@font/dosis_extrabold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine."
+            android:layout_marginLeft="10dp"
+             android:fontFamily="@font/dosis_semibold"
+             android:layout_marginTop="10dp"
+             android:textSize="13dp"
+            android:textColor="#575656"
+            />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/font_size_20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:fontFamily="@font/dosis_extrabold"
+            android:textColor="@color/black"
+            android:text="Related Products:" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/font_size_20sp"
+            android:id="@+id/related_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <!--<LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>-->
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/margin_basic_10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ADD TO CART"
+            android:fontFamily="@font/dosis_extrabold"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_rect_left"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/buyNow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="BUY NOW"
+            android:fontFamily="@font/dosis_extrabold"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/round_rect_right"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</RelativeLayout>

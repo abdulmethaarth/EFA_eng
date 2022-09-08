@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:gravity="bottom"
+    android:id="@+id/header"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/font_size_20sp"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:src="@drawable/mail_defoult"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:id="@+id/txt_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Affinity"
+                android:fontFamily="@font/dosis_extrabold"
+                android:textColor="@color/white"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/txt_user_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+9112344567"
+                android:fontFamily="@font/dosis_semibold"
+                android:textColor="@color/white"
+                android:layout_below="@+id/txt_user_name"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

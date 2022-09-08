@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_130">130dp</dimen>
+    <dimen name="height_50">50dp</dimen>
+    <dimen name="height_175">175dp</dimen>
+</resources>

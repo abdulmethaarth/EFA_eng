@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.affinity.efasample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.EFASample">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <activity android:name=".activity.MapActivity"></activity>
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.InnerSubCategoryActivity" />
+        <activity android:name=".activity.SubCategoryActivity" />
+        <activity android:name=".activity.MethodSelectionActivity" />
+        <activity android:name=".activity.ForgotActivity" />
+        <activity android:name=".activity.CategoryActivity" />
+        <activity android:name=".activity.GatewayActivity" />
+        <activity android:name=".activity.LoginMobileActivity" />
+        <activity android:name=".activity.LangActivity" />
+        <activity android:name=".activity.YourOrdersActivity" />
+        <activity android:name=".activity.PaymentActivity" />
+        <activity android:name=".activity.AddressActivity" />
+        <activity android:name=".activity.BuyNowActivity" />
+        <activity android:name=".activity.AddToCartActivity" />
+        <activity android:name=".activity.CompleteActivity" />
+        <activity android:name=".activity.ProductDtlsActivity" />
+        <activity android:name=".activity.ProductListActivity" />
+        <activity android:name=".activity.SignupActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.LoginOption" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

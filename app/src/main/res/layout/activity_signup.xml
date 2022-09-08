@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignupActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_login_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/layout_back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:paddingRight="15dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_shape"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txt_sign_in_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Signup"
+                    android:fontFamily="@font/dosis_extrabold"
+                    android:textColor="#272626"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_sign_in_logo"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#272626">
+
+                        <EditText
+                            android:background="@color/white"
+                            android:id="@+id/username"
+                            android:fontFamily="@font/dosis_semibold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="Name"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="#272626"
+                            android:textSize="16dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#272626">
+
+                            <EditText
+                                android:background="@color/white"
+                                android:id="@+id/email"
+                                android:fontFamily="@font/dosis_semibold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="10dp"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textColorHint="#272626"
+                                android:textSize="16dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:textColorHint="#272626">
+
+                            <EditText
+                                android:background="@color/white"
+                                android:id="@+id/password"
+                                android:fontFamily="@font/dosis_semibold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="10dp"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:hint="password"
+                                android:inputType="textEmailAddress"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textColorHint="#272626"
+                                android:textSize="16dp" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:textColorHint="#272626">
+
+                            <EditText
+                                android:background="@color/white"
+                                android:id="@+id/edt_mobile"
+                                android:fontFamily="@font/dosis_semibold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="10dp"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:hint="Mobile number"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textColorHint="#272626"
+                                android:textSize="16dp" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/layout_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btn_box">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Sign Up"
+                            android:fontFamily="@font/dosis_extrabold"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_signin"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:id="@+id/dont"
+                            android:fontFamily="@font/dosis_semibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:text="Already have an account? "
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:fontFamily="@font/dosis_extrabold"
+                            android:layout_toRightOf="@+id/dont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:text=" Sign in"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

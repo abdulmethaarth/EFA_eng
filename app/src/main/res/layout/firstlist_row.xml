@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/header"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="80dp"
+                android:scaleType="fitXY"
+                android:layout_margin="@dimen/margin_basic_10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:src="@drawable/cat2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:fontFamily="@font/dosis_semibold"
+                    android:id="@+id/arab"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/font_size_12sp"
+                    android:text="asasadsds"
+                    android:layout_height="wrap_content"
+                    android:textColor="#838080"
+                   />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/dosis_extrabold"
+                        android:layout_toLeftOf="@+id/cart"
+                        android:textColor="@color/purple_700"
+                        android:text="$34"/>
+
+                    <ImageView
+                        android:id="@+id/cart"
+                        android:layout_toLeftOf="@+id/heart"
+                        android:layout_width="@dimen/font_size_15sp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/cart_img"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/heart"
+                        android:layout_width="@dimen/font_size_15sp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_favorite_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/brand"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#838080"
+                    android:text="Lorem Ipsum is simply dummy"/>
+
+                <RelativeLayout
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:fontFamily="@font/dosis_semibold"
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#5d5175"
+                        android:text="Starting at "/>
+
+                    <TextView
+                        android:fontFamily="@font/dosis_extrabold"
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/amount"
+                        android:layout_toRightOf="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple_500"
+                        android:text=" $ 99"/>
+
+                    <TextView
+                        android:fontFamily="@font/dosis_semibold"
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:drawableLeft="@drawable/ic_baseline_star_24"
+                        android:textColor="#FA8D18"
+                        android:text=" 4.3"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

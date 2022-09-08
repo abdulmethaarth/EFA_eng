@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/layout_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:paddingRight="15dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_shape"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:fontFamily="@font/dosis_extrabold"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/radiogrup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="20dp"
+                android:fontFamily="@font/dosis_semibold"
+                android:text="1, VRINDAVAN, W Fort Rd, adj.\nICICI Bank, Palakkad, Kerala\nPin : 678001"/>
+            <RadioButton
+                android:layout_marginTop="20dp"
+                android:id="@+id/female"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:fontFamily="@font/dosis_semibold"
+                android:text="Durga Nagar, Kenathuparambu\Kunathurmedu,palakkad,\nKeralaPin : 678001"/>
+            <RadioButton
+                android:id="@+id/other"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:fontFamily="@font/dosis_semibold"
+                android:layout_height="wrap_content"
+                android:text="59/509, Kozhiparambu Road,\nNellissery, Vadakanthara,palakkad,\nKeralaPin : 678001"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_above="@+id/layout_payment"
+        android:id="@+id/layout_add_adress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_box_border">
+
+        <TextView
+            android:fontFamily="@font/dosis_extrabold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Add Address"
+            android:textColor="@color/purple_700"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_payment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_box">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Continue To Payment"
+            android:fontFamily="@font/dosis_extrabold"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

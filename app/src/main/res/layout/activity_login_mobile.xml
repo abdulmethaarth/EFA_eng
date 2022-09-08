@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/efa_bg"
+    tools:context=".activity.LoginMobileActivity">
+
+
+    <ImageView
+        android:layout_above="@+id/bottom"
+        android:id="@+id/logo_splash"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/white_logo" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_box_border"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:fontFamily="@font/dosis_extrabold"
+            android:text="Login with your phone number"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edt_box_white">
+
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_marginLeft="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/flag"
+                />
+
+            <EditText
+                android:id="@+id/edt_mobile"
+                android:layout_toRightOf="@+id/flag"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/dosis_semibold"
+                android:layout_toLeftOf="@+id/cancel_button"
+                android:text="(051)1234567890"
+                android:paddingLeft="10dp"
+                android:background="@drawable/border_white"
+                />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+               android:id="@+id/cancel_button"
+                android:layout_width="40dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cancel"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/next"
+            android:background="@drawable/border_box_10radius"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/dosis_extrabold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:text="Next"/>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:fontFamily="@font/dosis_semibold"
+            android:text="Do you want sign in?"/>
+
+            <TextView
+                android:id="@+id/click_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4B6DC6"
+                android:textStyle="bold"
+                android:fontFamily="@font/dosis_extrabold"
+                android:text=" Click Here"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
